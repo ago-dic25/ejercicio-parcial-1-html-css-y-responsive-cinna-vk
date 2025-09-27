@@ -1,1 +1,67 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    align-items: center;
+}
 
+header{
+    background-color: rgb(201, 137, 233);
+    text-align: center;
+}
+
+nav{
+    align-items: baseline;
+}
+
+.logo{
+    font-style: bold;
+    font-weight: 1000;
+    font-size: larger;
+}
+
+main{
+    background-color: rgb(201, 84, 201);
+    display: block;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px
+}
+
+.tarjeta{
+    background-color: rgba(127, 246, 255, 0.514);
+    grid-column: span 1;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 4px;
+}
+
+footer{
+    background-color: rgb(169, 110, 224);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    header, main, footer{
+        text-align: left;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
